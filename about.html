@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Deepti Bhatia | Portfolio</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="container">
+		<!---------------- Navigation --------------->
+		<div class="nav-wrapper">
+			<div class="left-side">
+				<div class="nav-link-wrapper">
+					<a href="index.html">About</a>
+				</div>
+				<div class="nav-link-wrapper active-nav-link">
+					<a href="about.html">Projects</a>
+				</div>
+			</div>
+			<div class="right-side">
+				<div class="brand">
+					<div>DEEPTI BHATIA</div>
+				</div>
+			</div>
+		</div>
+		<!---------------- Projects --------------->
+		<div class="contents-wrapper">
+			<div class="portfolio-items-wrapper">
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-color: #efbbff;"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<h3>Responsive Website</h3>
+						</div>
+						<div class="subtitle">
+							<div class="skills">
+								<ul class="skills-list">
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>Javascipt</li>
+									<li>Responsive</li>
+									<li>UX/UI</li>
+								</ul>
+							</div>
+							<p>It is a single page website for an imaginary local Home decor store using HTML, CSS & Javascript with a responsive design.</p>
+							<a href="https://deepti912.github.io/panache/" target="_blank" class="buttons">Demo</a>
+							<a href="https://github.com/deepti912/panache" target="_blank" class="buttons">Code</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-color: #d896ff;"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<h3>Recipe App</h3>
+						</div>
+						<div class="subtitle">
+							<div class="skills">
+								<ul class="skills-list">
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>Javascipt</li>
+									<li>Responsive</li>
+									<li>UX/UI</li>
+								</ul>
+							</div>
+							<p>This is a Recipe App fetching data from Edamam's recipe search API. It uses HTML, CSS & Javascript with a responsive design. User can search for any recipe using a keyword & get recipe details as well as data about calories, diet & health labels for that recipe.</p>
+							<a href="https://deepti912.github.io/allaboutfood/" target="_blank" class="buttons">Demo</a>
+							<a href="https://github.com/deepti912/allaboutfood" target="_blank" class="buttons">Code</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-color: #be29ec;"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<h3>Portfolio Website</h3>
+						</div>
+						<div class="subtitle">
+							<div class="skills">
+								<ul class="skills-list">
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>Javascipt</li>
+									<li>Responsive</li>
+									<li>UX/UI</li>
+								</ul>
+							</div>
+							<p>The idea behind this project was a medium to showcase my work. I tried to keep the UI as simple as possible. It has been created using HTML, CSS & Javascript with a responsive design.</p>
+							<a href="https://deepti912.github.io/portfolio/" target="_blank" class="buttons">Demo</a>
+							<a href="https://github.com/deepti912/portfolio" target="_blank" class="buttons">Code</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+	const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+	portfolioItems.forEach(portfolioItem => {
+		portfolioItem.addEventListener('mouseover', () => {
+			portfolioItem.childNodes[1].classList.add('img-darken');
+		})
+
+		portfolioItem.addEventListener('mouseout', () => {
+			portfolioItem.childNodes[1].classList.remove('img-darken');
+		})
+
+	})
+</script>
+</body>
+
+</html>
